@@ -1,5 +1,4 @@
 import React from "react";
-import "./App.css";
 import CharacterCount from "./components/CharacterCount";
 import TextInput from "./components/TextInput";
 

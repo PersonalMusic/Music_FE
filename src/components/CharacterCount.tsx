@@ -1,9 +1,9 @@
 import React from "react";
 import { useRecoilValue } from "recoil";
-import { withCount } from "../recoil/text";
+import { selector } from "../recoil/text";
 
 function CharacterCount() {
-  const count = useRecoilValue(withCount);
+  const count = useRecoilValue(selector);
 
   return <>Character Count: {count}</>;
 }
