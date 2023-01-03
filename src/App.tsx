@@ -7,6 +7,9 @@ function App() {
     <div className="App">
       <TextInput />
       <CharacterCount />
+      <h1 className="text-3xl font-bold underline">
+        하이루
+      </h1>
     </div>
   );
 }

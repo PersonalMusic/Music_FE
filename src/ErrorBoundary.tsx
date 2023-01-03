@@ -10,7 +10,7 @@ interface IErrorBoundaryState {
   hasError: boolean;
 }
 
-class ErrorBoundary extends Component {
+class ErrorBoundary extends Component<IErrorBoundaryProps, IErrorBoundaryState> {
   constructor(props: IErrorBoundaryProps) {
     super(props);
     this.state = { hasError: false };
@@ -20,9 +20,9 @@ class ErrorBoundary extends Component {
     return { hasError: true };
   }
 
-  componentDidCatch(error: Error, errorInfo: ErrorInfo): void {
-    logErrorToMyService(error, errorInfo);
-  }
+  // componentDidCatch(error: Error, errorInfo: ErrorInfo): void {
+  //   logErrorToMyService(error, errorInfo);
+  // }
 
   render() {
     if (this.state.hasError) {
