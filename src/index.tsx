@@ -1,23 +1,24 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App";
-import { QueryClient, QueryClientProvider } from "react-query";
-import { ReactQueryDevtools } from "react-query/devtools";
-import { RecoilRoot } from "recoil";
-import reportWebVitals from "./reportWebVitals";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { QueryClient, QueryClientProvider } from 'react-query';
+import { ReactQueryDevtools } from 'react-query/devtools';
+import { RecoilRoot } from 'recoil';
+import App from './App';
+import './index.css';
+import reportWebVitals from './reportWebVitals';
 
 const queryClient = new QueryClient();
 
-const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
+const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
   <React.StrictMode>
     <QueryClientProvider client={queryClient}>
-      <ReactQueryDevtools initialIsOpen={true} />
+      <ReactQueryDevtools initialIsOpen />
       <RecoilRoot>
         <App />
       </RecoilRoot>
     </QueryClientProvider>
-  </React.StrictMode>
+  </React.StrictMode>,
 );
 
 // If you want to start measuring performance in your app, pass a function

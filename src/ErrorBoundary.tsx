@@ -1,4 +1,4 @@
-import React, { Component, ReactNode } from "react";
+import React, { Component, ReactNode } from 'react';
 import { NavigateFunction } from 'react-router-dom';
 
 interface IErrorBoundaryProps {
@@ -26,10 +26,9 @@ class ErrorBoundary extends Component<IErrorBoundaryProps, IErrorBoundaryState> 
 
   render() {
     if (this.state.hasError) {
-      return <h1>Something went wrong.</h1>
+      return <h1>Something went wrong.</h1>;
     }
 
     return this.props.children;
   }
 }
-

@@ -1,11 +1,11 @@
-import React from "react";
-import { useRecoilState } from "recoil";
-import textAtom from "../recoil/text/atom";
+import React from 'react';
+import { useRecoilState } from 'recoil';
+import textAtom from '../recoil/text/atom';
 
 function TextInput() {
   const [text, setText] = useRecoilState(textAtom);
 
-  const onChange = (event: { target: { value: string | ((currVal: string) => string); }; }) => {
+  const onChange = (event: { target: { value: string | ((currVal: string) => string) } }) => {
     setText(event.target.value);
   };
 

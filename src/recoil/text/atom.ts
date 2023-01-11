@@ -1,8 +1,8 @@
-import { atom } from "recoil";
+import { atom } from 'recoil';
 
 const textAtom = atom({
-  key: "textAtom",
-  default: "",
+  key: 'textAtom',
+  default: '',
 });
 
 export default textAtom;

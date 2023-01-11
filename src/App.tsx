@@ -1,15 +1,13 @@
-import React from "react";
-import CharacterCount from "./components/CharacterCount";
-import TextInput from "./components/TextInput";
+import React from 'react';
+import CharacterCount from './components/CharacterCount';
+import TextInput from './components/TextInput';
 
 function App() {
   return (
-    <div className="App">
+    <div className="w-full h-screen max-w-screen-sm m-auto bg-red-300">
       <TextInput />
       <CharacterCount />
-      <h1 className="text-3xl font-bold underline">
-        하이루
-      </h1>
+      <p className="text-xl">하이루</p>
     </div>
   );
 }

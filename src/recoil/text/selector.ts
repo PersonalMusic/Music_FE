@@ -1,8 +1,8 @@
-import { selector } from "recoil";
-import textAtom from "./atom";
+import { selector } from 'recoil';
+import textAtom from './atom';
 
 const textWithCount = selector({
-  key: "textWithCount",
+  key: 'textWithCount',
   get: ({ get }) => {
     const text = get(textAtom);
 
